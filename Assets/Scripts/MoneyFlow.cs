@@ -77,16 +77,16 @@ public class MoneyFlow : MonoBehaviour
     private void OnGUI()
     {
         // label for how much money you have.
-        GUI.Label(new Rect(50,160,150,20),"current funds = " + money);
+        GUI.Label(new Rect(Screen.width * 0.05f ,Screen.height * 0.6f, 150, 20),"current funds = " + money);
 
 
         if (investorButton.activeInHierarchy == true)
         {
             // label for the cost of the investor upgrade
-            GUI.Label(new Rect(330, 65, 150, 20), investorUpgradeCost.ToString());
+            GUI.Label(new Rect(Screen.width * 0.43f, Screen.height * 0.25f, 150, 20), investorUpgradeCost.ToString());
         }
         // label for cost of the efficiency upgrade
-        GUI.Label(new Rect(330, 25, 150, 20), efficiencyUpgradeCost.ToString());
+        GUI.Label(new Rect(Screen.width * 0.425f, Screen.height * 0.1f, 150, 20), efficiencyUpgradeCost.ToString());
 
     }
 }
